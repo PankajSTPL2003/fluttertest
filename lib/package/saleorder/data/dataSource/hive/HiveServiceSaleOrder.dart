@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
-import '../../../model/SaleDetails.dart';
+import '../../../../model/SaleDetails.dart';
 
-class HiveServiceSOrder {
+class HiveServiceSaleOrder {
 
   static const String boxName = "SaleOrderDetails";
 
@@ -11,7 +11,7 @@ class HiveServiceSOrder {
   }
 
   /// Get All Sale Orders
-  Future<List<SaleDetails>> SOrders() async {
+  Future<List<SaleDetails>> saleOrders() async {
     try {
       final box = await _openBox();
 
@@ -23,7 +23,7 @@ class HiveServiceSOrder {
   }
 
   /// Get Sale Orders By Entity
-  Future<List<SaleDetails>> SOrdersWithEntity(String entity) async {
+  Future<List<SaleDetails>> saleOrdersWithEntity(String entity) async {
     try {
       final box = await _openBox();
 

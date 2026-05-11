@@ -1,5 +1,7 @@
 import 'package:hive/hive.dart';
-import '../../../model/SaleDetails.dart';
+
+import '../../../../model/SaleDetails.dart';
+
 
 class HiveServiceSaleEstimate {
 

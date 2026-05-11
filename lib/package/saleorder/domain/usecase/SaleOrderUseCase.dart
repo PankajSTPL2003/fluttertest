@@ -1,21 +1,21 @@
-import 'package:fluttertest/package/sOrder/domain/repository/SOrderRepository.dart';
 
-import '../../model/SaleDetails.dart';
+import '../../../model/SaleDetails.dart';
+import '../repository/SaleOrderRepository.dart';
 
-class SOrderUseCase {
-final SOrderRepository _orderRepository;
+class SaleOrderUseCase {
+final SaleOrderRepository _orderRepository;
 
 
-SOrderUseCase(this._orderRepository);
+SaleOrderUseCase(this._orderRepository);
 
   Future<List<SaleDetails>> SOrders() async{
-    return await _orderRepository.SOrders();
+    return await _orderRepository.saleOrders();
 
   }
 
   Future<List<SaleDetails>> SOrdersWithEntity(String entity) async {
 
-    return await _orderRepository.SOrdersWithEntity(entity);
+    return await _orderRepository.saleOrdersWithEntity(entity);
   }
 
   Future<bool> addSOrder(SaleDetails sOrder) async{

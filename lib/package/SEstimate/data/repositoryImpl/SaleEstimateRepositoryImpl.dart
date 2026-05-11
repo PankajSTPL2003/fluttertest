@@ -1,6 +1,5 @@
 
-
-import '../../../sOrder/model/SaleDetails.dart';
+import '../../../model/SaleDetails.dart';
 import '../../domain/repository/SaleEstimateRepository.dart';
 import '../dataSource/hive/HiveServiceSaleEstimate.dart';
 

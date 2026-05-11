@@ -1,12 +1,13 @@
-import 'package:fluttertest/package/model/SDetails.dart';
+
+import 'package:fluttertest/package/model/SaleDetails.dart';
 import 'package:get/get.dart';
 
 class SOrderController extends GetxController{
 
 
 
-  RxList<SDetails> sOrders=<SDetails>[].obs;
-  RxList<SDetails> filterSOrders=<SDetails>[].obs;
+  RxList<SaleDetails> sOrders=<SaleDetails>[].obs;
+  RxList<SaleDetails> filterSOrders=<SaleDetails>[].obs;
 
   @override
   void onReady() {

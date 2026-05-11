@@ -1,7 +1,6 @@
-import 'package:fluttertest/package/model/SDetails.dart';
 
-import '../../../sOrder/model/SaleDetails.dart';
 
+import '../../../model/SaleDetails.dart';
 
 abstract class SaleEstimateRepository {
 
